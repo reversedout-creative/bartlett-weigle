@@ -387,7 +387,7 @@ ul.slimmenu li.active ul li a{
 	right: 10px;
 }
 .main-menu ul li span.sub-toggle i {
-	color: #ffffff;	
+	color: #ffffff; 	
 }
 .main-menu ul li ul li .sub-toggle {
 	display: none !important;
@@ -614,6 +614,11 @@ header.innner-menu #mainNav.affix {
 	}
 	.main-menu ul li ul li .sub-toggle {
 		display: inline-block !important;
+		color: #ffffff !important;
+	}
+	#mainNav ul.slimmenu li:hover i,
+	.main-menu ul li span.sub-toggle i {
+		color: #ffffff !important;
 	}
 
 }
@@ -795,7 +800,7 @@ ul.practice-area li:nth-child(5):before {
 ul.practice-area li:nth-child(3) h3 {
 	text-align: left;
 }
-ul.practice-area li:nth-child(5) h3 a:hover {
+ul.practice-area li h3 a:hover {
 	color: #1d355e;
 }
 .practice-areas h2 {
@@ -1022,8 +1027,13 @@ ul.practice-area li:hover a {
 .home-contact .contain-box {
 	padding-left: 15px;
 }
+.copy-right {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 .copy-right .inline-block ,
 .copy-right p {
+	padding: 0;
 	display: inline-block;
 	font-size: 12px;
 	vertical-align: middle;
@@ -1264,5 +1274,10 @@ ul.practice-area li:hover a {
 		padding-top: 100px;
 		min-height: inherit;
 		padding-bottom: 50px;
+	}
+	.contact-call {
+		padding-left: 0;
+		padding-top: 15px;
+		display: block;
 	}
 }
