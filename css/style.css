@@ -1,5 +1,5 @@
 /* Import Google fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700|PT+Sans:400,700|PT+Serif:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|PT+Sans:400,700|PT+Serif:400,400i,700');
 /*  font-family: 'PT Sans', sans-serif;
     font-family: 'PT Serif', serif;
     font-family: 'Montserrat', sans-serif;  */
@@ -9,6 +9,7 @@
 @import 'base.css';
 @import 'font-awesome.css';
 @import 'slimmenu.min.css';
+@import 'owl-carousel.css';
 @import 'wow_animate.css';
 
 /* CSS Document */
@@ -136,7 +137,7 @@ input[type="submit"],
 .btn:active:after, .btn:focus:after, .btn:hover:after { width: 200px; }
 
 .btn.large-btn { min-width: 300px; }
-.btn:active:after, .btn:focus:after, .btn:hover:after { width: 290px; }
+.btn.large-btn:active:after, .btn.large-btn:focus:after, .btn.large-btn:hover:after { width: 290px; }
 
 @media(max-width: 480px){
 .btn.large-btn { min-width: 280px; }
@@ -299,8 +300,10 @@ body {
 .cyancolor   {  background: #1d8ec2;  }
 
 .light-blue  {  background: #bee0f8;  }
+.light-blue-color  {  color: #bee0f8;  }
 .regal-blue  {  background: #223b51;  }
 .reg-bg      {  background: #c22032;  }
+.reg-color      {  color: #c22032;  }
 
 .color-white p,
 .color-white h1, .color-white h2, .color-white h3, .color-white h4, .color-white h5,
@@ -590,7 +593,11 @@ header.innner-menu #mainNav.affix {
 		min-width: 550px;
 	}
 }
-
+@media(max-width: 1100px) {
+	ul.slimmenu li > ul > li ul {
+		left: -200px
+	}
+}
 @media(max-width: 991px){
 	ul.slimmenu li.active span.sub-toggle i,
 	ul.slimmenu li.active a {
@@ -1489,6 +1496,295 @@ ul.list-arrow li:before {
 	top: 8px;
 }
 
+.member-pages.internal-banner .banner-contain{
+	text-align: left;
+	max-width: 550px;
+	padding-left: 15px;
+}
+.member-pages h1 {
+	padding-bottom: 0;
+}
+.member-pages h5 {
+	font-size: 24px;
+	padding-top: 0;
+}
+.social-share {
+	position: fixed;
+	top: 40%;
+	left: 0;
+}
+.share-linkdein {
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+}
+.share-linkdein a {
+	background: #01a4ef;
+	line-height: 45px;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 24px;
+	text-align: center;
+	width: 52px;
+	height: 50px;
+	margin-top: 16px;
+}
+.share-linkdein a:hover {
+	background: #c21f31;
+}
+.team-member h2.red {
+	color: #c21f31;
+	display: inline-block;
+}
+.team-member h3 {
+	letter-spacing: normal;
+}
+.team-member .light-blue-color {
+	color: #81b5d9;
+	text-transform: uppercase;
+	letter-spacing: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+.team-member p {
+	color: #333333;
+}
+.side-testimonial p {
+	font-family: 'PT Serif', serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 21px;
+	line-height: 30px;
+	color: #82b5da;
+}
+.side-testimonial span.author-name {
+	display: block;
+	color: #333333;
+	font-family: 'PT Serif', serif;
+	font-weight: 700;
+	padding-top: 15px;
+}
+.owl-buttons {
+	display: none;
+}
+.right-sidebar .owl-theme .owl-controls .owl-page span {
+	height: 8px;
+	width: 8px;
+	margin: 4px;
+	background: #81b4d9;
+}
+.right-sidebar .owl-theme .owl-controls .owl-page.active span,
+.right-sidebar .owl-theme .owl-controls.clickable .owl-page:hover span {
+	background: #333333;
+}
+.right-sidebar .owl-pagination {
+	text-align: left;
+	padding-top: 20px
+}
+
+.side-blog-posts p {
+	font-family: 'PT Serif', serif;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 30px;
+	color: #c22032;
+}
+.side-blog-posts span.date{
+	padding-top: 15px;
+	display: block;
+}
+.team-member .internal-ctn ul {
+	margin-left: 15px;
+}
+.team-member .internal-ctn ul li {
+	list-style: outside;
+}
+
+/**/
+.ohio-city,
+.justin-left {
+	padding: 0;
+	position: relative;
+}
+.justin-left {
+	background: #1d355e;
+}
+.ohio-city {
+	background: #c22032;
+}
+.justin-left:after {
+	height: 440px;
+	width: 40px;
+	content: ' ';
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	right: 5px;
+	top:0;
+	z-index: 300;
+	background: #1d355e;
+		-ms-transform: skewX(-12deg); /* IE 9 */
+    -webkit-transform: skewX(-12deg); /* Safari */
+    transform: skewX(-12deg); /* Standard syntax */
+}
+.ohio-city:before {
+	height: 440px;
+	width: 95px;
+	content: ' ';
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	left: -40px;
+	top:0;
+	z-index: 150;
+	background: #ffffff;
+		-ms-transform: skewX(-12deg); /* IE 9 */
+    -webkit-transform: skewX(-12deg); /* Safari */
+    transform: skewX(-12deg); /* Standard syntax */
+}
+.ohio-city:after {
+	height: 440px;
+	width: 40px;
+	content: ' ';
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	left: 5px;
+	top: 0;
+	z-index: 300;
+	background: #c22032;
+		-ms-transform: skewX(-12deg); /* IE 9 */
+    -webkit-transform: skewX(-12deg); /* Safari */
+    transform: skewX(-12deg); /* Standard syntax */
+}
+.image {
+	height:440px;
+	display: block;
+	overflow: hidden;
+	width:100%;
+}
+.image img{
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+}
+.banner-contain {
+	position: relative;
+	min-height: 120px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.ohio-city .banner-contain:before {
+	content: ' ';
+	position: absolute;
+	left: -54px;
+	top:0;
+	background: #c22032;
+	width: 70px;
+	height: 100%;
+		-ms-transform: skewX(-12deg); /* IE 9 */
+    -webkit-transform: skewX(-12deg); /* Safari */
+    transform: skewX(-12deg); /* Standard syntax */
+}
+.justin-left .banner-contain {
+	max-width: 580px;
+	width: 100%;
+	padding-left: 15px;
+	color: #ffffff;
+	float: right;
+}
+.justin-banner h1 {
+	padding: 0;
+	color: #ffffff;
+}
+.justin-banner h5 {
+	font-size: 24px;
+	padding: 0;
+	color: #ffffff;
+	line-height: 30px;
+}
+.ohio-city .banner-contain {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.ohio-city .banner-contain h5 {
+	text-transform: inherit;
+	letter-spacing: normal;
+}
+h2.red {
+	color: #c21f31;
+}
+.justin-contain .internal-ctn h2.red {
+	color: #c21f31;
+	display: inline-block;
+}
+.left-testimonials {
+	padding-left: 0;
+}
+.right-blog-post {
+	padding-right: 0;
+}
+.left-testimonials h2,
+.right-blog-post h2 {
+	padding-top: 20px;
+}
+
+
+.sliders .owl-theme .owl-controls .owl-page span {
+	height: 8px;
+	width: 8px;
+	margin: 4px;
+	background: #81b4d9;
+}
+.sliders .owl-theme .owl-controls .owl-page.active span,
+.sliders .owl-theme .owl-controls.clickable .owl-page:hover span {
+	background: #333333;
+}
+.sliders .owl-pagination {
+	text-align: left;
+	padding-top: 20px
+}
+.practice-area-sidebar {
+	padding-bottom: 20px;
+}
+.practice-area-sidebar li {
+	list-style: none;
+}
+.practice-area-sidebar li a {
+	padding: 20px 15px;
+	background: #1d355e;
+	color: #ffffff;
+	display: block;
+	width: 100%;
+	text-align: center;
+	border-bottom: 2px solid #ffffff;
+	font-family: 'PT Serif', serif;
+	font-size: 18px;
+}
+.practice-area-sidebar li a:hover {
+	background: #c22032;
+}
+/**/
+
+@media(min-width: 1500px) {
+	.ohio-city:before,
+	.ohio-city:after,
+	.justin-left:after,
+	.image {
+		height: 550px;
+	}
+	.ohio-city:after,
+	.justin-left:after {
+		width: 50px;
+	}
+	.ohio-city:before {
+		width: 105px;
+	}
+	.ohio-city .banner-contain::before {
+		left: -65px;
+		width: 90px;
+	}
+}
 
 
 
@@ -1510,6 +1806,17 @@ ul.list-arrow li:before {
 	.sub-pages li a h3 {
 		min-width: 150px;
 	}
+	.image {
+		height: 350px;
+	}
+	.ohio-city:before,
+	.ohio-city:after,
+	.justin-left:after {
+		height: 350px;
+	}
+	.ohio-city .banner-contain::before {
+		left: -44px;
+	}
 }
 @media(max-width: 767px){
 	.banner-image {
@@ -1529,6 +1836,35 @@ ul.list-arrow li:before {
 	}
 	.sub-pages li {
 		width: 33.33%;
+	}
+	.social-share {
+		display: none;
+	}
+	.team-member h2.red {
+		max-width: 90%;
+	}
+	.ohio-city .banner-contain::before,
+	.ohio-city:before,
+	.ohio-city:after,
+	.justin-left:after {
+		display: none;
+	}
+	.justin-left .banner-contain,
+	.banner-contain {
+		float: none;
+	}
+	.ohio-city,
+	.justin-left {
+		clear: both;
+	}	
+	.justin-left .banner-contain {
+		min-height: inherit;
+	}
+	.ohio-city .banner-contain {
+		padding: 20px 15px;
+	}
+	.justin-contain .right-sidebar {
+		padding-top: 40px;
 	}
 }
 @media(max-width: 600px){
@@ -1551,6 +1887,12 @@ ul.list-arrow li:before {
 	}
 	.sub-pages li {
 		width: 50%;
+	}
+	.team-member h2.red {
+		max-width: 80%;
+	}	
+	.image {
+		height: 250px;
 	}
 }
 @media(max-width: 480px){}

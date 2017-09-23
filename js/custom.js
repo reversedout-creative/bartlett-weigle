@@ -16,7 +16,7 @@
  
 
 	/* Slime Menu */
-	$('.slimmenu').slimmenu({
+	jQuery('.slimmenu').slimmenu({
 		resizeWidth: '991',
 		collapserTitle: '',
 		animSpeed:'medium',
@@ -24,11 +24,12 @@
 		childrenIndenter: '<i class="fa fa-chevron-right"></i>'
 	});
 	// Close Effect Menu
-	$(function() {
-		$('.collapse-button').click(function() {
-			$('.collapse-button').toggleClass('close-menu');
+	jQuery(function() {
+		jQuery('.collapse-button').click(function() {
+			jQuery('.collapse-button').toggleClass('close-menu');
 		});
 	});
+	/* End Slime Menu*/
 	
 	
 	
@@ -98,16 +99,105 @@
 /* --------------------------------------------------
 	 * document ready
 	 * --------------------------------------------------*/
-	jQuery(document).ready(function() {
-		$("body").show();
-		jQuery(window).on("scroll", function() {
+	//jQuery(document).ready(function() {
+	//	$("body").show();
+	//	jQuery(window).on("scroll", function() {
 			/* fade base scroll position */
 			// custom page with background on side
-			jQuery('.side-bg').each(function() {
-				jQuery(this).find(".image-container").css("height", jQuery(this).find(".image-container").parent().css("height"));
-			});
+		//	jQuery('.side-bg').each(function() {
+			//	jQuery(this).find(".image-container").css("height", jQuery(this).find(".image-container").parent().css("height"));
+		//	});
 			/* go to anchor */
+		//});
+	//});
+
+	jQuery(document).ready(function() {
+		var owl = jQuery("#SideTestimonials");
+			owl.owlCarousel({
+			stopOnHover : true,
+			navigation:true,
+			autoPlay : 4000,
+			autoHeight : true,
+			items :1,
+			itemsDesktop : [1000,1], //2 items between 1000px and 901px
+			itemsDesktopSmall : [900,1], // 2 items betweem 900px and 601px
+			itemsTablet: [600,1], //2 items between 600 and 0;
+			itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
 		});
+		// Custom Navigation Events
+		jQuery(".next2").click(function(){
+			owl.trigger('owl.next');
+		})
+		jQuery(".prev2").click(function(){
+			owl.trigger('owl.prev');
+		})
+	});
+	
+	
+	jQuery(document).ready(function() {
+		var owl = jQuery("#SideBlogposts");
+			owl.owlCarousel({
+			stopOnHover : true,
+			navigation:true,
+			autoPlay : 4000,
+			autoHeight : true,
+			items :1,
+			itemsDesktop : [1000,1], //2 items between 1000px and 901px
+			itemsDesktopSmall : [900,1], // 2 items betweem 900px and 601px
+			itemsTablet: [600,1], //2 items between 600 and 0;
+			itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+		});
+		// Custom Navigation Events
+		jQuery(".next2").click(function(){
+			owl.trigger('owl.next');
+		})
+		jQuery(".prev2").click(function(){
+			owl.trigger('owl.prev');
+		})
 	});
 
+	//
+	jQuery(document).ready(function() {
+		var owl = jQuery("#SideTestimonials1");
+			owl.owlCarousel({
+			stopOnHover : true,
+			navigation:true,
+			autoPlay : 4000,
+			autoHeight : true,
+			items :1,
+			itemsDesktop : [1000,1], //2 items between 1000px and 901px
+			itemsDesktopSmall : [900,1], // 2 items betweem 900px and 601px
+			itemsTablet: [600,1], //2 items between 600 and 0;
+			itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+		});
+		// Custom Navigation Events
+		jQuery(".next2").click(function(){
+			owl.trigger('owl.next');
+		})
+		jQuery(".prev2").click(function(){
+			owl.trigger('owl.prev');
+		})
+	});
+	
+	jQuery(document).ready(function() {
+		var owl = jQuery("#SideBlogposts1");
+			owl.owlCarousel({
+			stopOnHover : true,
+			navigation:true,
+			autoPlay : 4000,
+			autoHeight : true,
+			items :1,
+			itemsDesktop : [1000,1], //2 items between 1000px and 901px
+			itemsDesktopSmall : [900,1], // 2 items betweem 900px and 601px
+			itemsTablet: [600,1], //2 items between 600 and 0;
+			itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+		});
+		// Custom Navigation Events
+		jQuery(".next2").click(function(){
+			owl.trigger('owl.next');
+		})
+		jQuery(".prev2").click(function(){
+			owl.trigger('owl.prev');
+		})
+	});
 })(jQuery);
