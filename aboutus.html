@@ -65,9 +65,7 @@
                             </li>
                             <li><a href="criminal_law.html">Criminal</a></li>
                             <li><a href="business.html">Business </a>
-                            	<ul>
-                                	<li><a href="franchising.html">Franchising </a></li>
-                                </ul>
+                            	 
                             </li>
                             <li><a href="estate_planning.html">Estate Planning </a></li>
                             <li><a href="personal_injury.html">Personal Injury </a></li>
@@ -131,7 +129,7 @@
             <h3>Our Mission</h3>
             <p>We work every day to deliver creative and effective legal solutions and counsel with the highest quality, efficiency and ethical standards.</p>
             
-            <h3>Our Promise To Clients</h3>
+            <h3 id="Our_Promise">Our Promise To Clients</h3>
             
             <h4>A Team Approach</h4>
             <p> We encourage collaboration on our cases. We believe that maximizing the expertise and talents of our team is the most effective way to obtain the best results for our clients.   </p>
@@ -242,6 +240,10 @@
         $('html,body').animate({scrollTop:targetOffset}, speed);
     }
     </script>
+    <!-- Click to Offser Page -->
+    <script>
+		$('html,body').animate({ scrollTop: $(window.location.hash).offset(). top -100  },1500)
+	</script>
 
 </body>
 </html>
