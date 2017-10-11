@@ -393,7 +393,12 @@ ul.slimmenu li.active ul li a{
 .main-menu ul li ul li a:hover {
 	background: #1d355e;
 }
-
+.main-menu ul li ul li.active ul li a {
+	background: #c22032;
+}
+.main-menu ul li ul li.active ul li a:hover {
+	background: #1d355e;
+}
 .main-menu ul li span.sub-toggle {
 	right: 10px;
 }
@@ -613,6 +618,9 @@ header.innner-menu #mainNav.affix {
 	.main-menu .slimmenu li ul li a {
 		background: #c22032;
 		border-bottom-color: #b51e2f;
+	}
+	.main-menu .slimmenu li ul li ul li a {
+		background: #ab1727;
 	}
 	.main-menu ul li ul li a:hover {
 		background: #bee0f8;
@@ -1219,6 +1227,10 @@ ul.practice-area li:hover a {
 	}
 }
 @media(max-width: 767px){
+	.hero-banner {
+		background: url(../images/banner-bg.jpg) center center no-repeat;
+		background-size: cover;
+	}
 	.legal-contain {
 		padding: 20px 15px 40px;
 		max-width: 100%;
@@ -1229,7 +1241,7 @@ ul.practice-area li:hover a {
 	ul.practice-area li {
 		float: none;
 		width: 100% !important;
-		height: 100px;
+		height: 80px;
 		background: #bee0f8;
 		border-top: 1px solid #1d355e;
 	}
@@ -1277,6 +1289,32 @@ ul.practice-area li:hover a {
 		max-width: 100%;
 		padding-bottom: 30px;
 	}
+	.immigration-service a {
+		display: block;
+	}
+	.immigration-service .s-icon {
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		position: absolute;
+		left: 15px;
+		top: 0;
+		border: none;
+	}
+	.immigration-service a:hover .s-icon {
+		width: 60px;
+		height: 60px;
+		background: none;
+		border: none;
+	}
+	.immigration-service h4 {
+		text-align: left;
+		padding-left: 80px;
+	}
+	.immigration-service a:hover .s-icon img {
+		max-width: 100%;
+	}
+
 }
 
 @media(max-width: 600px){
@@ -1295,6 +1333,27 @@ ul.practice-area li:hover a {
 		padding-left: 0;
 		padding-top: 15px;
 		display: block;
+	}
+	.immigration-service .s-icon {
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		top: 10px;
+	}
+	.immigration-service a:hover .s-icon {
+		width: 30px;
+		height: 30px;
+	}
+	.immigration-service h4 {
+		padding-left: 40px;
+		padding-top: 0;
+		font-size: 16px;
+		line-height: 24px;
+		padding-bottom: 0;
+	}
+	.immigration-service {
+		padding-top: 6px;
+		padding-bottom: 10px;
 	}
 }
 

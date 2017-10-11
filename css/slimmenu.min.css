@@ -85,7 +85,7 @@ ul.slimmenu li ul {
     margin: 0;
     list-style-type: none
 }
-ul.slimmenu li>ul {
+ul.slimmenu li ul {
     position: absolute;
     left: 0;
     top: 100%;
@@ -93,7 +93,7 @@ ul.slimmenu li>ul {
     display: none;
     width: 100%
 }
-ul.slimmenu li>ul>li ul {
+ul.slimmenu li ul li ul {
     position: absolute;
     left: 100%;
     top: 0;
@@ -198,34 +198,6 @@ ul.slimmenu li .sub-toggle>i {
 .close-menu .icon-bar:nth-of-type(3) {
 	  top: -6px;
 	  
-	  -webkit-transform: rotate(-45deg);
-	  -moz-transform: rotate(-45deg);
-	   -o-transform: rotate(-45deg);
-	   transform: rotate(-45deg);
-}
-/* Menu Effects */
-.close-menu .icon-bar:nth-of-type(2) {
-	  top: 1px;
-}
-.close-menu .icon-bar:nth-of-type(3) {
-  	top: 2px;
-}
-.close-menu .icon-bar {
-	  position: relative;
-	  transition: all 100ms ease-in-out;
-}
-.close-menu .icon-bar:nth-of-type(1) {
-	  top: 10px;	  
-	  -webkit-transform: rotate(45deg);
-	  -moz-transform: rotate(45deg);
-	   -o-transform: rotate(45deg);
-	   transform: rotate(45deg);
-}
-.close-menu .icon-bar:nth-of-type(2) {
-	  background-color: transparent;
-}
-.close-menu .icon-bar:nth-of-type(3) {
-	  top: -6px;	  
 	  -webkit-transform: rotate(-45deg);
 	  -moz-transform: rotate(-45deg);
 	   -o-transform: rotate(-45deg);
